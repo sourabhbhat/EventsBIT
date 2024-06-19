@@ -14,7 +14,7 @@ export function Footer() {
                />
             </Link>
 
-            <p>2023 Evently. All Rights reserved.</p>
+            <p>2024 EventsBIT. All Rights reserved.</p>
          </div>
       </footer>
    );

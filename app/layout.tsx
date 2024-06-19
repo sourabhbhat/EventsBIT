@@ -11,7 +11,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-   title: "Effortless Events",
+   title: "EventsBIT",
    description:
       "Effortless Events is a full-service event planning Website that specializes in creating unique and memorable events for our clients.",
 };

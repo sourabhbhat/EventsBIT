@@ -12,8 +12,8 @@ export const connectToDatabase = async () => {
    cached.promise =
       cached.promise ||
       mongoose.connect(MONGODB_URI, {
-         dbName: "Effortless-Events",
-         bufferCommands: false,
+         dbName: "EventsBIT",
+         bufferCommands: false,  
       }).then(() => {
          console.log("Connection successful");
          // Emitting connected event
@@ -24,13 +24,7 @@ export const connectToDatabase = async () => {
          // Emitting error event
          mongoose.connection.emit('error', err);
       });
-      mongoose.connection.on('connected', () => {
-         console.log('Successfully connected to the database.');
-      });
       
-      mongoose.connection.on('error', (err) => {
-         console.error(`Failed to connect to the database: ${err}`);
-      });
    cached.conn = await cached.promise;
 
    return cached.conn;
